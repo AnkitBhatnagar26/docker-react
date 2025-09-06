@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker build -t ankitb2k14/react-test -f Dockerfile.dev .
-      - run: docker run -e CI=true ankitb2k14/react-test npm test
+      - run: docker build -t ankitb2k14/react-docker -f Dockerfile.dev .
+      - run: docker run -e CI=true ankitb2k14/react-docker npm test
